@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-1.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input[type='button']").click(function(){    //button元素的click事件
+                var inputValue=$("#test1").val();               //通过id选择器获得元素，元素.val()方法
+                      alert(inputValue);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" value="" name="test" id="test1">
+    <input type="button" value="输入的值为">
+
+</body>
+</html>

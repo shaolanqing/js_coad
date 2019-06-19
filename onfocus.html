@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+       function  myblur()           //失去焦点,背景颜色变白
+       {
+          var  e=window.event;
+          var  obj=e.srcElement;
+          obj.style.background="white";    
+       }
+       function  myfocus()                 //获得焦点，背景颜色变红
+       {
+          var  e=window.event;
+          var  obj=e.srcElement;
+          obj.style.background="red";   
+       }
+
+</script>
+</head>
+<body>
+    <input  type="text"  name="a1" onfocus="myfocus()"onblur="myblur()"/>
+    <input  type="text"  name="a2" onfocus="myfocus()"onblur="myblur()"/>
+    <input  type="text"  name="a3" onfocus="myfocus()"onblur="myblur()"/>
+    <input  type="text"  name="a4" onfocus="myfocus()"onblur="myblur()"/>
+</body>
+</html>

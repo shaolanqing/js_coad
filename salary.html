@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function abc()
+        {
+             var salary=myform.one.value;
+         var x=0;
+         if(salary<5000)
+             alert("免税");
+        if(salary>=5000&&salary<10000)
+        {
+              x=(salary-5000)*0.04;
+            alert("5000-10000以内的税收为:"+x);
+        }
+        if(salary>=10000)
+          {
+            //x=(salary-10000);
+            x=(salary-10000)*0.05+5000*0.04;
+             alert("10000以上的税收为:"+x);
+          }  
+         
+        }
+    </script>
+</head>
+<body>
+    <p>请输入你的工资</p>
+    <form name="myform">
+        <input type="text" name="one">
+        <input type="button" value="计算纳税金额" onclick="abc()">
+    </form>
+</body>
+</html>

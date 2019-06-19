@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算</title>
+    <script>
+        function sum(){
+            var t=document.getElementById('t1').value;
+            var t1=parseInt(t);
+            var sum=0;
+            for(var i=0;i<=t1;i++)
+            {
+                 sum=sum+i;
+            }
+            document.getElementById('t2').value=sum;
+            console.log(sum);                
+        }
+    </script>
+</head>
+<body>
+    <p>请输入整数</p>
+    <input type="text" value="" name="txt1" id="t1">
+    <input type="button" value="计算阶乘" onclick="sum();">
+    <p>计算结果为</p>
+    <input type="text" value="" name="txt1" id="t2">
+</body>
+</html>

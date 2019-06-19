@@ -1,0 +1,23 @@
+<!-- 输出100-999之间的水仙花数 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,a,b,c;
+        document.write("水仙花数有:"+"<br>");
+        for(i=100;i<=999;i++)
+        {
+            c=i%100%10;
+            b=(i%100-c)/10;
+            a=(i-c-10*b)/100;
+            if((a*a*a+b*b*b+c*c*c)==i)
+                document.write(i+"  ");
+        }
+   
+    </script>
+</body>
+</html>

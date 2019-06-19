@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类名选择器</title>
+    <script src="jquery-1.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var myclass=$(".myclass");           //通过类选择器来获取元素
+            myclass.css("background-color","#f00");         //改变样式
+            myclass.css("color","#00f");
+
+        });
+    </script>
+</head>
+<body>
+    <div class="myclass">注意观察我的样式</div>
+    <div>我的样式是默认的</div>
+</body>
+</html>

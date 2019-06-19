@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>table2</title>
+  <script src="jquery-1.6.1.min.js"></script>             <!-- 与html文件在同一文件夹下 -->
+  <style>
+      td{
+         font-size: 12px;
+         padding: 3px;
+      }
+       .th{
+            background-color: #b6df48;
+            font-weight: bold;
+            text-align: center;
+        }
+       .even{
+        background-color: #e8f3d1;  
+       }
+       .odd{
+        background-color: #f9fcef;  
+       }
+   </style>
+   <script>
+     $(document).ready(function(){
+        $("tr:even").addClass("even");          //第二行开始     下标为奇数的行
+        $("tr:odd").addClass("odd");          //第一行开始         下标为偶数的行
+        $("tr:first").addClass("th");
+     });
+   </script>
+</head>
+<body>
+  <table width="383" height="257" border="1" align="center">
+  <tr>
+    <td width="121"><div align="center">学号</div></td>
+    <td width="171"><div align="center">姓名</div></td>
+    <td width="139"><div align="center">专业</div></td>
+  </tr>
+  <tr>
+    <td><div align="center">01dd0101</div></td>
+    <td><div align="center">小陈</div></td>
+    <td><div align="center">小学教育</div></td>
+  </tr>
+  <tr>
+    <td><div align="center">01d0505</div></td>
+    <td><div align="center">小王</div></td>
+    <td><div align="center">计算机</div></td>
+  </tr>
+  <tr>
+    <td><div align="center">01d0205</div></td>
+    <td><div align="center">小刘</div></td>
+    <td><div align="center">高数</div></td>
+  </tr>
+</table>
+</body>
+</html>

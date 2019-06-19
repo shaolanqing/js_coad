@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+    <title>通过返回值判断两个数的大小</title>
+    <script type="text/javascript">
+        function compare(x,y){
+            if(x>y)
+                return true;
+            else
+                return false;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var result=compare(10,20);
+        if(result)
+            alert("第一个数大于第二个数");
+        else
+            alert("第二个数大于第一个数");
+    </script>
+</body>
+</html>

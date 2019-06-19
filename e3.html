@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态添加一个文本框</title>
+    <script>
+        function addInput(){
+            var txt=document.createElement("input");       //创建一个html标记
+            txt.type="text";
+            txt.name="txt";
+            txt.value="动态添加的文本框";
+            document.form1.appendChild(txt);
+
+        }
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <input type="button" name="btn1" value="动态添加文本框" onclick="addInput();">
+    </form>
+</body>
+</html>

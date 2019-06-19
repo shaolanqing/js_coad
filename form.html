@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+       function  myreset(){
+             if(window.confirm("是真的重置吗"))      // 弹出窗口
+                 return  true;
+             else
+                  return  false;
+                
+       }
+       function  mysubmit(){          //提交
+           var  t=true;
+           var  e=window.event;
+           var  obj=e.srcElement;
+           for(var  i=1;i<=2;i++)
+           {
+                if(eval("obj."+"a"+i).value==""){
+                    t=false;
+                    break;
+                }
+           }
+           if(!t)
+           {
+               alert("信息不能为空");
+               return  false;   
+           }
+           return  true;     
+       }
+</script>
+</head>
+<body>
+        <form  onsubmit="return  mysubmit()" onreset="return  myreset()" name="a"  method="post" action="onfocus.html">       <!-- method为提交方式， action为提交后跳转的页面 -->
+            请输入姓名：<input  type="text"  name="a1" /><br />
+            请输入年龄:<input  type="text"  name="a2" /><br />
+            <input type="submit"  value="注册" />
+            <input  type="reset"   value="重置" />
+</form>
+</body>
+</html>

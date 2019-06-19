@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function mysubmit()
+        {
+            if(myform.text1.value=="")
+                alert("用户名不能为空!");
+            if(myform.text2.value=="")
+                alert("学号不能为空!");
+            if(myform.password.value.length<=8)
+                alert("密码必须8位以上!");
+        }
+        function myreset()
+        {
+            if(window.confirm("真的取消吗?"))
+                return true;
+            else
+                return false;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" onsubmit="return mysubmit()" onreset="return myreset()">
+        用户名<input type="text" name="text1"><br />
+        学   号<input type="text" name="text2"><br />
+        密   码<input type="password" name="password"><br />
+        <input type="submit" value="注册">
+        <input type="reset" value="取消">
+    </form>
+</body>
+</html>
+   <!--  <script>
+        function abc(){
+            var t=true;
+            var e=window.event;
+            var object=e.srcElement;
+            for(var i=1;i<=3;i++)
+            {
+                if(eval("obj."+"a"+i).value=="")
+                {
+                    t=false;
+                    break;
+                }
+              
+           }
+   
+             var info;
+             info=f1.t1.value;
+             if(info=='')
+             {
+                    alert("用户名不能为空");
+                    f1.t1.focus();
+                    return false;
+                    var num;
+                    num=f1.t2.value;
+                    if(num=='')
+                     {
+                          alert("学号不能为空");
+                          f1.t2.focus();
+                          return false;
+                          var pwd;
+                          pwd=f1.t3.value;
+                        if(pwd.length<8)
+                         {
+                            alert("密码要八位以上");
+                            f1.t3.focus();
+                            return false;
+                         }
+                     }
+             }
+               // if(!t)
+               //  {
+               //      alert("信息不能为空");
+               //      return false;
+               //  }
+                return true;
+             
+        }
+        function def(){
+               if(window.confirm("是真的取消吗"))      // 弹出窗口
+                 return  true;
+             else
+                  return  false;
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="return abc()" onreset="return def()" method="post" name="f1" >
+        用户名<input type="text" value="" id="t1"><br>
+        学号<input type="text" value="" id="t2"><br>
+        密码<input type="text" value="" id="t3"><br><br>
+        <input type="submit" value="注册">
+        <input type="reset" value="取消">
+
+    </form>
+</body>
+</html> -->
